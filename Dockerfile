@@ -3,7 +3,6 @@ FROM phusion/baseimage
 MAINTAINER Bin Wei <bwei@tronc.com>
 
 RUN apt-get update && apt-get install -y postgresql-client
-ADD pgpass /home/bwei/.pgpass
 ADD *.sql /home/bwei/
 WORKDIR /home/bwei
 
